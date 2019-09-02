@@ -1,0 +1,532 @@
+/* 公共样式初始化 */
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 解决IOS默认滑动很卡的情况 */
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* 禁止缩放表单 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  border: 0px;
+  outline: none;
+}
+
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: 'PingFangSC-Regular, sans-serif';
+}
+
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+textarea {
+  outline: none;
+}
+
+s {
+  text-decoration: none;
+}
+
+/* 图片自适应 */
+img {
+  width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  display: block;
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/
+}
+
+input,
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: 'PingFangSC-Regular, sans-serif';
+}
+
+select {
+  background: #fff;
+  color: #555;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 0.5rem 100%;
+}
+
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #fff;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+strong {
+  font-weight: normal;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #969696;
+  font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-family: 'PingFangSC-Regular, sans-serif';
+}
+
+img {
+  border: none;
+}
+
+
+/*单行溢出*/
+.one-txt-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*多行溢出 手机端使用*/
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+}
+
+/* 移动端点击a链接出现蓝色背景问题解决 */
+a:link,
+a:active,
+a:visited,
+a:hover {
+  background: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w20 {
+  width: 20%;
+}
+
+.w33 {
+  width: 33.333333%;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.db {
+  display: block !important;
+}
+
+.dn {
+  display: none;
+}
+
+.clear:after {
+  content: ".";
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.icon {
+  background: url('../images/icon.png') no-repeat;
+}
+
+.icon-18-0 {
+  background-position: -18rem 0;
+}
+
+.icon-24-0 {
+  background-position: -24rem 0;
+}
+
+.icon-30-0 {
+  background-position: -30rem 0;
+}
+
+.icon-36-0 {
+  background-position: -36rem 0;
+}
+
+.icon-42-0 {
+  background-position: -42rem 0;
+}
+
+.icon-48-0 {
+  background-position: -48rem 0;
+}
+
+
+.icon-18-6 {
+  background-position: -18rem -6rem;
+}
+
+.icon-24-6 {
+  background-position: -24rem -6rem;
+}
+
+.icon-30-6 {
+  background-position: -30rem -6rem;
+}
+
+.icon-36-6 {
+  background-position: -36rem -6rem;
+}
+
+
+.icon-0-12 {
+  background-position: 0 -12rem;
+}
+
+.icon-6-12 {
+  background-position: -6rem -12rem;
+}
+
+.icon-12-12 {
+  background-position: -12rem -11.8rem;
+}
+
+.icon-18-12 {
+  background-position: -18rem -12rem;
+}
+
+.icon-24-12 {
+  background-position: -24rem -12rem;
+}
+
+.icon-30-12 {
+  background-position: -30rem -12rem;
+}
+
+.icon-36-12 {
+  background-position: -36rem -12rem;
+}
+
+.pr {
+  position: relative;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#PAGE {
+  background: #eeeff1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.bottom {
+  height: 5.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  bottom: 1px solid #d9d9d9;
+}
+
+.bottom ul {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom li {
+  float: left;
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.bottom li i {
+  display: block;
+  width: 2.4rem;
+  height: 2.1rem;
+  background: url('../images/icon.png') no-repeat;
+}
+
+.bottom li .bottom-home {
+  background-position: 0 -6rem;
+}
+
+.bottom li .bottom-welfare {
+  background-position: -5.8rem -6rem;
+}
+
+.bottom li .bottom-person {
+  background-position: -11.8rem -6rem;
+}
+
+.bottom li .bottom-home.bottom-active {
+  background-position: 0 0;
+}
+
+.bottom li .bottom-welfare.bottom-active {
+  background-position: -5.8rem 0;
+}
+
+.bottom li .bottom-person.bottom-active {
+  background-position: -11.8rem 0;
+}
+
+.bottom p {
+  width: 100%;
+  display: flex;
+  height: 1rem;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 0.75rem;
+  color: #a8a8a8;
+  font-size: 1rem;
+  font-family: 'PingFangSC-Regular, sans-serif';
+  line-height: 1rem;
+}
+
+.bottom p.active {
+  color: #3cbfae;
+}
+
+.myfadeup-enter-active,
+.myfadeup-leave-active {
+  opacity: 1;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  transform: translateY(0);
+}
+
+.myfadeup-enter,
+.myfadeup-leave {
+  opacity: 0;
+  transform: translateY(50px);
+  /*rotate(-45deg)*/
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+
+.Myfade-enter-active,
+.Myfade-leave-active {
+  opacity: 0.8;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+.Myfade-enter,
+.Myfade-leave {
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+
+.myzoomUp-enter-active,
+.myzoomUp-leave-active {
+  opacity: 1;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  transform: translateY(0) scale(1);
+}
+
+.myzoomUp-enter,
+.myzoomUp-leave {
+  opacity: 0;
+  transform: translateY(50px) scale(0);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
