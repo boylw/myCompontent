@@ -36,7 +36,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "moment": "^2.24.0",
-    "qs": "^6.7.0",
+    "qs": "^6.5.3",
     "swiper": "^4.5.0",
     "vue-axios": "^2.1.4",
     "vue-moment": "^4.0.0",
